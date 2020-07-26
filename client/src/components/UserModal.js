@@ -8,8 +8,8 @@ import { formatDate, formatDateArray } from '../utility/FormatDate';
 
 export const UserModal = ({ handleClose, show, userActivity }) => {
 
-    let startDate = moment(formatDate(userActivity[0].start_time), 'MMM Do YYYY hmA');
-    let endDate = moment(formatDate(userActivity[0].end_time), 'MMM Do YYYY hmA');
+    let startDate = moment(formatDate(userActivity[userActivity.length - 1].start_time), 'MMM Do YYYY hmA');
+    let endDate = moment(formatDate(userActivity[userActivity.length - 1].end_time), 'MMM Do YYYY hmA');
 
     return (
         <>
