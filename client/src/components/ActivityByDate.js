@@ -18,7 +18,7 @@ export const ActivityByDate = ({ dates }) => {
             <p>Search activity by date</p>
             <DatePicker id="DatepickerInput" selected={date} onChange={date => setdate(date)} />
             {(date && start_time && end_time) ?
-                <Alert variant='info'>
+                <Alert variant='success'>
                     The user was active from
                     <strong>{' ' + start_time.format("hh:mm:ss a") + ' '}</strong>
                       to
